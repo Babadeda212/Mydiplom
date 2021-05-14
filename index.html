@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Тест</title>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" class="logo">
+    </header>
+    <main class="main">
+        <div class="main__text">
+            <p class="main__text-p">
+                Здарвствуйте, это сайт с викториной по ПДД. В наше время очень важно знать правила дорожного движения, ведь города становяться больше, транспорта становиться так-же больше. Поэтому пройдите тест и узнайте насколько хорошо вы знаете правила дорожного движения 
+            </p>
+            <img class="main__text-car" src="carPdd.png">
+        </div>
+        <div class="main__game">
+            <img class="main__image_game" src="mainGay.png">
+            <div class="main__game_groop">
+                <p class="main__game_text">Чтобы начать играть, нажмите на кнопку "Начать викторину", дальше высветится окно, в котором нужно указать пpавильный вариант ответа и нажать кнопку "далее".  За каждый правильный вариант ответа, вы получаете +1 балл. Максимум 10 баллов. Удачи!</p>
+                <button class="main__game_button button">Начать викторину</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <a class="footer__copyright" href="#" target="_blank">&copy; 2020 Морозов Артем Алексеевич</a>
+    </footer>
+    <div class="popup">
+        <div class="popup__container">
+            <div class="popup__header">
+                <h2 class="popup__title">1/10</h2>
+                <img class="popup__buttonClose" src="closeButton.png" alt="Закрыть">    
+            </div>
+            <div class="popup__test">
+                <h2 class="popup__question">Текст вопроса</h2>
+                <select class="popup__answer">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </div>
+            <button class="popup__button button" type="click" >Далее</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
