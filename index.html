@@ -11,6 +11,7 @@
 <body>
     <header class="header">
         <img src="logo.png" class="logo">
+        <button class="header__button button" type="click" >Удалить все тесты, кроме теста по ПДД</button>
     </header>
     <main class="main">
         <div class="main__text">
@@ -23,8 +24,14 @@
             <img class="main__image_game" src="mainGay.png">
             <div class="main__game_groop">
                 <p class="main__game_text">Чтобы начать играть, нажмите на кнопку "Начать викторину", дальше высветится окно, в котором нужно указать пpавильный вариант ответа и нажать кнопку "далее".  За каждый правильный вариант ответа, вы получаете +1 балл. Максимум 10 баллов. Удачи!</p>
+                <select class="main__game_select selec" >
+                </select>
                 <button class="main__game_button button">Начать викторину</button>
             </div>
+        </div>
+        <div class="main__create">
+            <p class="main__create_text">Также у нас на сайте вы можете создать свой тест. И выбрать его в выпадающем списке перед прохождением теста. Чтобы его создать, нажмите на кнопку "Создать тест". Напишите название теста, вопрос и ответы на вопрос. Что бы выбрать какой из ответов будет верным, поставте флажок напротив верного ответа и нажмите кнопку далее. И так надо сделать 10 вопросов. Удачи!</p>
+            <button class="main__create-button button">Создать тест</button>
         </div>
     </main>
     <footer class="footer">
@@ -38,7 +45,7 @@
             </div>
             <div class="popup__test">
                 <h2 class="popup__question">Текст вопроса</h2>
-                <select class="popup__answer">
+                <select class="popup__answer selec">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -47,6 +54,41 @@
             <button class="popup__button button" type="click" >Далее</button>
         </div>
     </div>
+    <div class="popup__create">
+        <div class="popup__container">
+            <div class="popup__header">
+                <h2 class="popup__title">1/10</h2>
+                <img class="popup__create_close" src="closeButton.png" alt="Закрыть">    
+            </div>
+            <div class="popup__test">
+                <div class="popup__group popup__name">
+                    <h2 class="popup__grop_title">Название Теста</h2>
+                    <input class="popup__input popup__name_test" type="text">
+                </div>
+                <div class="popup__group">
+                    <h2 class="popup__grop_title">Вопрос</h2>
+                    <input class="popup__input popup__question" type="text">
+                </div>
+                <div class="popup__group">
+                    <h2 class="popup__grop_title">Ответ 1</h2>
+                    <input class="popup__input popup__answer1" type="text">
+                    <input type="radio" name="valid" id="board" value="1" class="popup__radio">
+                </div>
+                <div class="popup__group">
+                    <h2 class="popup__grop_title">Ответ 2</h2>
+                    <input class="popup__input popup__answer2" type="text">
+                    <input type="radio" name="valid" id="board" value="2" class="popup__radio">
+                </div>
+                <div class="popup__group">
+                    <h2 class="popup__grop_title">Ответ 3</h2>
+                    <input class="popup__input popup__answer3" type="text">
+                    <input type="radio" name="valid" id="board" value="3" class="popup__radio" checked>
+                </div>
+            </div>
+            <button class="popup__button button" type="click" >Далее</button>
+        </div>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
